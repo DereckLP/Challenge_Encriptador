@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagenes_e_iconos/favicon.ico" type="image/x-icon">
+    <script src="Encriptador.js"></script>
+
+    
+<title>Encryptor</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo"><img class="logo_candado" src="Imagenes_e_iconos/Candado.png" alt="Candado">Encryptor</h1>
+    </header>
+    <main>
+        <form>
+        <div class="cuadrado_input">
+            <label for="Texto_input">Ingrese el texto</label>
+            <textarea id="Texto_input" name="Texto_input" class="Text_area" cols="50" rows="13"></textarea>
+        </div>
+        <input onclick="capturar1()" type="button" value="Encriptar" class="Boton" id="Encriptar">
+        <input onclick="capturar2()" type="button" value="Desencriptar" class="Boton" id="Desencriptar">
+        <div class="cuadrado_output">
+            <label for="Texto_output"></label>
+            <textarea id="Texto_output" name="Texto_output" class="Text_area" cols="35" rows="18"></textarea>
+            <input onclick="clearTextarea()" type="button" value="Limpiar" class="Boton" id="limpiar">
+        </div>
+        </form>
+    </main>
+</body>
+</html>
